@@ -15,7 +15,7 @@ class CartController extends Controller
      */
     public function index()
     {
-        
+        return view('cart.index');
     }
 
     /**
@@ -95,8 +95,11 @@ class CartController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($rowid)
     {
-        //
+        Cart::remove($rowid);
+
+        return back()->with('success', 'Le produit a ete supprimer');
+        
     }
 }
