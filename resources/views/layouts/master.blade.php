@@ -9,6 +9,8 @@
     <meta name="generator" content="Jekyll v4.0.1">
     <title>Ecommerce</title>
 
+    @yield('extra-script')
+
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- Bootstrap core CSS -->
@@ -323,5 +325,7 @@ h1, h2, h3, h4, h5, h6 {
     <a href="#">Back to top</a>
   </p>
 </footer>
+
+@yield('extra-js')
 </body>
 </html>
